@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oi&family=Rubik+Vinyl&display=swap");
+
+:root {
+  /**ESQUEMA DE COLORES DIA**/
+  --bg: #efe9d5;
+  --clrMain: #fff;
+  --clr1: #27445d;
+  --clr2: #a65f1b;
+  --aux_1: #497d74;
+  --aux_2: #71bbb2;
+  --aux_3: #d1f8ef;
+  --aux_4: #3674b5;
+
+  --fontStyle_1: "Montserrat", sans-serif;
+  --fontStyle_2: "Bungee Hairline", sans-serif;
+  --fontStyle_3: "Oi", serif;
+  --fontStyle_4: "Rubik Vinyl", system-ui;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  background: var(--bg);
+  font-size: 2rem;
+  font-family: var(--fontStyle_1);
+  color: var(--clr2);
+}
+
+#root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  align-items: center;
+}
+
+section {
+  scroll-snap-align: center;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+footer {
+  scroll-snap-align: center;
+}

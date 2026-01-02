@@ -1,0 +1,19 @@
+header {
+  min-width: 100%;
+  min-height: 6rem;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, transparent, var(--clr2));
+  border: none;
+  border-radius: 0rem 0rem 2rem 2rem;
+  color: var(--clrMain);
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    min-width: 90%;
+  }
+}
