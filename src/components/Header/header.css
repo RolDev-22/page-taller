@@ -81,6 +81,7 @@ header.showMenu .nav-header ul a {
   border-radius: 0.5rem;
   background: var(--clr2);
   border: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn-menu::after,
@@ -92,7 +93,7 @@ header.showMenu .nav-header ul a {
   height: 5px;
   left: 0.5rem;
   background-color: white;
-  transition: all 0.5s ease-in-out 0.1s;
+  transition: all 0.3s ease-in-out 0.1s;
 }
 
 .btn-menu::after {
@@ -104,15 +105,22 @@ header.showMenu .nav-header ul a {
   width: 50%;
 }
 
+header.showMenu .btn-menu {
+  background: var(--clrMain);
+  border: 1px outset var(--clr2);
+}
+
 header.showMenu .btn-menu::before {
   width: 80%;
   top: 2rem;
   transform: rotate(45deg);
+  background: var(--clr2);
 }
 
 header.showMenu .btn-menu::after {
   top: 2rem;
   transform: rotate(-45deg);
+  background: var(--clr2);
 }
 
 @media screen and (min-width: 768px) {
@@ -121,5 +129,35 @@ header.showMenu .btn-menu::after {
   }
   .figure-logo {
     width: 4.5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    backdrop-filter: blur(1rem);
+    padding: 0;
+    font-size: 1.5rem;
+  }
+
+  .figure-logo {
+    margin-left: 0.5rem;
+  }
+
+  .nav-header {
+    position: relative;
+    width: 90%;
+    opacity: 1;
+    display: flex;
+    backdrop-filter: none;
+  }
+
+  .nav-header ul {
+    flex-direction: row;
+    padding: 0.2rem;
+    height: auto;
+  }
+
+  .container-menu {
+    display: none;
   }
 }

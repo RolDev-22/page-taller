@@ -1,5 +1,5 @@
 const Home = () => {
-  return <section>Hola desde Home</section>;
+  return <section id="section-Home">Hola desde Home</section>;
 };
 
 export { Home };

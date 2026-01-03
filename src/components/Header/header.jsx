@@ -18,16 +18,24 @@ export default function Header() {
       <nav className="nav-header">
         <ul>
           <li>
-            <a href="section-Home">Inicio</a>
+            <a href="#section-Home" onClick={showMenu}>
+              Inicio
+            </a>
           </li>
           <li>
-            <a href="section-Service">Servicios</a>
+            <a href="#section-Service" onClick={showMenu}>
+              Servicios
+            </a>
           </li>
           <li>
-            <a href="section-About">Sobre Nosotros</a>
+            <a href="#section-About" onClick={showMenu}>
+              Sobre Nosotros
+            </a>
           </li>
           <li>
-            <a href="section-Contact">Contacto</a>
+            <a href="#section-Contact" onClick={showMenu}>
+              Contacto
+            </a>
           </li>
         </ul>
       </nav>

@@ -32,7 +32,7 @@ body {
   font-size: 2rem;
   font-family: var(--fontStyle_1);
   color: var(--clr2);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #root {
@@ -48,6 +48,7 @@ section {
   min-height: 100dvh;
   display: grid;
   place-items: center;
+  padding-top: 100px;
 }
 
 footer {
