@@ -2,16 +2,17 @@ import "./header.css";
 import React, { useState } from "react";
 
 export default function Header() {
+  const windowWidth = window.innerWidth;
   const [activeMenu, setActiveMenu] = useState(false);
 
   const showMenu = () => {
-    setActiveMenu(!activeMenu);
+    windowWidth <= 768 ? setActiveMenu(!activeMenu) : setActiveMenu(false);
   };
 
   return (
     <header className={`${activeMenu ? "showMenu" : ""}`}>
       <figure className="figure-logo">
-        <a href="#section/Home">
+        <a href="#section-Home">
           <img loading="lazy" src="./pg_logo.png" alt="Logo Empresarial" />
         </a>
       </figure>

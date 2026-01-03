@@ -1,5 +1,5 @@
 import { About } from "./pages/About";
-import { Home } from "./pages/home";
+import { Home } from "./pages/Home";
 import { Service } from "./pages/Service";
 import { Contact } from "./pages/Conatct";
 import Footer from "./components/Footer/footer";

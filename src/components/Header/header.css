@@ -1,5 +1,5 @@
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 90%;
   min-height: 6rem;
@@ -9,8 +9,8 @@ header {
   align-items: center;
   padding: 1rem;
   border: none;
-  border-radius: 0rem 0rem 2rem 2rem;
   color: var(--clrMain);
+  z-index: 1;
 }
 
 .figure-logo {
@@ -60,6 +60,7 @@ header.showMenu .nav-header {
 
 .header .nav-header ul a {
   opacity: 0;
+  color: var(--aux_3);
 }
 
 header.showMenu .nav-header ul a {
@@ -130,11 +131,14 @@ header.showMenu .btn-menu::after {
   .figure-logo {
     width: 4.5em;
   }
+
+  .container-menu {
+    margin-right: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   header {
-    backdrop-filter: blur(1rem);
     padding: 0;
     font-size: 1.5rem;
   }
