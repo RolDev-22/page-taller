@@ -43,7 +43,7 @@ header {
   transition: opacity 0.5s ease-in-out, width 0.3s ease-in-out;
 }
 
-.nav-header.showMenu {
+header.showMenu .nav-header {
   width: 100%;
   opacity: 1;
 }
@@ -58,11 +58,11 @@ header {
   width: 90%;
 }
 
-.nav-header ul a {
+.header .nav-header ul a {
   opacity: 0;
 }
 
-.nav-header.showMenu ul a {
+header.showMenu .nav-header ul a {
   opacity: 1;
 }
 
@@ -83,8 +83,8 @@ header {
   border: none;
 }
 
-.container-menu .btn-menu::after,
-.container-menu .btn-menu::before {
+.btn-menu::after,
+.btn-menu::before {
   display: flex;
   position: absolute;
   content: "";
@@ -95,7 +95,7 @@ header {
   transition: all 0.5s ease-in-out 0.1s;
 }
 
-.container-menu .btn-menu::after {
+.btn-menu::after {
   top: 1.3rem;
 }
 
@@ -104,8 +104,15 @@ header {
   width: 50%;
 }
 
-.nav-header.showMenu .btn-menu::before {
-  width: 100%;
+header.showMenu .btn-menu::before {
+  width: 80%;
+  top: 2rem;
+  transform: rotate(45deg);
+}
+
+header.showMenu .btn-menu::after {
+  top: 2rem;
+  transform: rotate(-45deg);
 }
 
 @media screen and (min-width: 768px) {

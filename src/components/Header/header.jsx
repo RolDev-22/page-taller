@@ -9,13 +9,13 @@ export default function Header() {
   };
 
   return (
-    <header>
+    <header className={`${activeMenu ? "showMenu" : ""}`}>
       <figure className="figure-logo">
         <a href="#section/Home">
           <img loading="lazy" src="./pg_logo.png" alt="Logo Empresarial" />
         </a>
       </figure>
-      <nav className={`nav-header ${activeMenu ? "showMenu" : ""}`}>
+      <nav className="nav-header">
         <ul>
           <li>
             <a href="section-Home">Inicio</a>
