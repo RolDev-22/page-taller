@@ -32,6 +32,7 @@ body {
   font-size: 2rem;
   font-family: var(--fontStyle_1);
   color: var(--clr2);
+  overflow: hidden;
 }
 
 #root {
@@ -51,4 +52,13 @@ section {
 
 footer {
   scroll-snap-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--clr1);
+  text-decoration: none;
 }
