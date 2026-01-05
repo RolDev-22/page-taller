@@ -1,19 +1,167 @@
 .container-home {
-  width: 96dvw;
-  height: 96dvh;
-  clip-path: url(#clip);
-  background-color: black;
-  background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.5)),
+  height: auto;
+  min-height: 100dvh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--clrMain);
+  z-index: 0;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
     url("/bg-home.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  border-radius: 1rem;
 }
 
-@media screen and (min-height: 1200px) {
+.container-home h2 {
+  font-family: var(--fontStyle_5);
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--aux_3);
+}
+
+.container-home h3 {
+  font-family: var(--fontStyle_2);
+  font-size: 2rem;
+}
+
+.container-home .container-information {
+  width: 95%;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.container-home .container-schedule {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.container-home .container-schedule h3 {
+  font-family: var(--fontStyle_1);
+  color: var(--clr2);
+}
+
+.container-home .container-schedule h5 {
+  color: var(--clrMain);
+}
+
+.container-home .container-social {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  align-items: center;
+  box-sizing: content-box;
+  padding: 0.3rem;
+}
+
+.container-home .container-social figure {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  box-sizing: content-box;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--bg);
+}
+
+.container-home .container-social figure a {
+  display: flex;
+  flex: 1;
+}
+
+.container-home .container-social figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/**SMALL PHONE*/
+@media screen and (max-width: 390px) {
   .container-home {
+    padding-top: 100px;
+  }
+}
+
+/**TABLETS*/
+@media screen and (min-width: 766px) {
+  .container-home {
+    clip-path: url(#tallerClip);
+  }
+
+  .container-home h2 {
+    font-size: 4rem;
+  }
+
+  .container-home .container-schedule {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    bottom: 0rem;
+    right: 0rem;
+    width: 100dvw;
+    border: none;
+    border-radius: 2rem 0rem 0rem 0rem;
+    padding: 0.5rem;
+    background-color: var(--bg);
+    margin: 0;
+    width: calc(100dvw - 64%);
+    height: calc(100dvh - 78%);
+  }
+
+  .container-home .container-schedule h3 {
+    color: var(--clr1);
+  }
+}
+
+/**LAPTOPS*/
+@media screen and (min-width: 1024px) {
+  .container-home .container-schedule {
+    height: calc(100dvh - 80%);
+    width: calc(100dvw - 63%);
+  }
+
+  .container-home .container-social figure:hover {
+    transform: scale(1.1);
+  }
+
+  .container-home .container-social figure:hover:nth-child(1) {
+    background: linear-gradient(45deg, red, violet, yellow);
+  }
+
+  .container-home .container-social figure:hover:nth-child(2) {
+    background-color: var(--aux_4);
+  }
+
+  .container-home .container-social figure:hover:nth-child(3) {
+    background-color: green;
+  }
+}
+
+/**DESCKTOP*/
+@media screen and (min-width: 1320px) {
+  .container-home .container-schedule {
+    height: calc(100dvh - 80%);
+    width: calc(100dvw - 64%);
+  }
+}
+
+/**DESKTOP > */
+@media screen and (min-height: 1200px) {
+  .container-home .container-home {
     height: 98dvh;
+  }
+  .container-home .container-schedule {
+    height: calc(100dvh - 78%);
+    width: calc(100dvw - 64%);
   }
 }

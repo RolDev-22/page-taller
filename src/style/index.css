@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oi&family=Rubik+Vinyl&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Gravitas+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oi&family=Rubik+Vinyl&display=swap");
 
 :root {
   /**ESQUEMA DE COLORES DIA**/
-  --bg: #efe9d5;
+  --bg: #d8cfb3;
   --clrMain: #fff;
   --clr1: #27445d;
-  --clr2: #a65f1b;
+  /*--clr2: #a65f1b;*/
+  --clr2: #f3ba69;
   --aux_1: #497d74;
   --aux_2: #71bbb2;
   --aux_3: #d1f8ef;
@@ -15,13 +16,14 @@
   --fontStyle_2: "Bungee Hairline", sans-serif;
   --fontStyle_3: "Oi", serif;
   --fontStyle_4: "Rubik Vinyl", system-ui;
+  --fontStyle_5: "Gravitas One", serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: proximity;
 }
 
 body {
@@ -43,16 +45,18 @@ body {
 }
 
 section {
-  scroll-snap-align: start;
+  scroll-snap-align: inherit;
   min-height: 100dvh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
 }
 
 footer {
   z-index: 5;
-  scroll-snap-align: start;
+  scroll-snap-align: inherit;
 }
 
 li {
@@ -60,7 +64,8 @@ li {
 }
 
 a {
-  color: var(--aux_3);
+  font-weight: bolder;
+  color: var(--clrMain);
   text-decoration: none;
 }
 
@@ -71,4 +76,13 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    scroll-snap-align: start;
+  }
+  footer {
+    scroll-snap-align: start;
+  }
 }
