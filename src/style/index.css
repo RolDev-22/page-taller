@@ -105,7 +105,7 @@ section .container {
   --opEnd: 1;
   animation: entryAnimation 0.2s linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  animation-range: entry 0% cover 15%;
 }
 
 .rigthAnimation {
@@ -136,5 +136,11 @@ section .container {
   to {
     opacity: var(--opEnd);
     transform: var(--trfmEnd);
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .animationEntry {
+    animation-range: entry 0% cover 25%;
   }
 }

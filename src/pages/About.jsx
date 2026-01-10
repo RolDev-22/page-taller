@@ -30,7 +30,7 @@ const About = () => {
           </article>
           <article className="description animationEntry showAnimation">
             <img src="/ic-cality.svg" alt="logo-descriptivo" />
-            <h2 className="styleTitleH2">Servicio de calidad</h2>
+            <h2 className="styleTitleH2">Calidad</h2>
             <h4>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex
               officia accusamus sed nemo autem dolorem magni? Vero, officia?
@@ -40,7 +40,7 @@ const About = () => {
           </article>
           <article className="description animationEntry rigthAnimation">
             <img src="/ic-profes.svg" alt="logo-descriptivo" />
-            <h2 className="styleTitleH2">Profesionales</h2>
+            <h2 className="styleTitleH2">Profesionalismo</h2>
             <h4>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex
               officia accusamus sed nemo autem dolorem magni? Vero, officia?
