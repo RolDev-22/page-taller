@@ -1,0 +1,53 @@
+.container-about {
+  gap: 1rem;
+}
+
+.container-about .mainStyle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.container-about .presentation-about {
+  background-color: var(--bg);
+}
+
+.container-about .presentation-about article {
+  padding: 0.3rem;
+}
+
+.container-about .presentation-about article h3 {
+  text-align: justify;
+}
+
+.container-about .presentation-about > figure > img {
+  width: 95%;
+  border-radius: 0.5rem;
+  object-fit: fill;
+}
+
+.container-about .description-about {
+  background-color: transparent;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.container-about .description-about > article {
+  width: 90%;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.container-about .description-about > article > img {
+  width: 30%;
+  object-fit: fill;
+}
+
+.container-about .description-about > article > h4 {
+  text-align: justify;
+}

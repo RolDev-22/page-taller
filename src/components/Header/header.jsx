@@ -1,37 +1,39 @@
 import "./header.css";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Header() {
-  const windowWidth = window.innerWidth;
-  const refToHeader = useRef(null);
-  const [activeMenu, setActiveMenu] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+  const refToNav = useRef(null);
 
-  const showMenu = () => {
-    windowWidth <= 1023 ? setActiveMenu(!activeMenu) : setActiveMenu(false);
-  };
+  function showMenu() {
+    setShowNav(!showNav);
+  }
 
   useEffect(() => {
-    const handleScroll = () => {
-      window.scrollY > 15
-        ? refToHeader.current.classList.add("addFilter")
-        : refToHeader.current.classList.remove("addFilter");
+    const addEffectHeader = () => {
+      if (window.scrollY >= 100) {
+        refToNav.current.classList.add("addEffect");
+      } else {
+        refToNav.current.classList.remove("addEffect");
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", addEffectHeader);
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", addEffectHeader);
     };
   }),
     [];
 
   return (
-    <header ref={refToHeader} className={`${activeMenu ? "showMenu" : ""}`}>
+    <header className={showNav ? "show" : ""}>
       <figure className="figure-logo">
-        <a href="#section-Home">
+        <a href="/">
           <img loading="lazy" src="./pg_logo.png" alt="Logo Empresarial" />
         </a>
       </figure>
-      <nav className="nav-header">
+      <nav ref={refToNav} className="nav-header">
         <ul>
           <li>
             <a href="#section-Home" onClick={showMenu}>

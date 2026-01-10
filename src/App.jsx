@@ -4,7 +4,6 @@ import { Service } from "./pages/Service";
 import { Contact } from "./pages/Conatct";
 import Footer from "./components/Footer/footer";
 import Header from "./components/Header/header";
-import "./style/App.css";
 
 function App() {
   return (
@@ -12,11 +11,15 @@ function App() {
       <Header />
       <main>
         <Home />
+
         <Service />
+
         <About />
+        {/* 
         <Contact />
+        */}
       </main>
-      <Footer />
+      {/*<Footer />*/}
     </>
   );
 }

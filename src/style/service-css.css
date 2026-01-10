@@ -1,0 +1,139 @@
+#section-Service .container-service {
+  position: relative;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  z-index: 0;
+}
+
+#section-Service .container-service::before {
+  position: absolute;
+  content: "";
+  width: 98%;
+  height: 98%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+#section-Service .container-tittle-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+  border-bottom: 5px inset var(--aux1);
+  background-color: var(--aux3);
+}
+
+#section-Service .container-tittle-service h3 {
+  max-width: 95%;
+  text-align: center;
+}
+
+.container-service > .container-target {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  min-height: 400px;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  backdrop-filter: blur(1rem) brightness(110%);
+  box-shadow: 0px 0px 10px var(--bg);
+}
+
+.container-service > .container-target {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/bg-targetServ1.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.container-service > .container-target h3 {
+  color: var(--clr);
+}
+
+.container-service > .container-target p {
+  width: 90%;
+}
+
+.container-service > .container-target a {
+  min-width: 50%;
+  max-width: 50%;
+  padding: 1rem;
+  text-align: center;
+  border: 0.2rem inset var(--aux1);
+  border-radius: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 770px) {
+  .container-service > .container-target {
+    width: 370px;
+  }
+
+  #section-Service .container-tittle-service > h2 {
+    font-size: 4rem;
+  }
+
+  #section-Service .container-tittle-service > h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .container-service > .container-target {
+    transition: all 0.5s ease-in-out;
+    justify-content: center;
+    row-gap: 0.5rem;
+  }
+
+  .container-service > .container-target h3,
+  .container-service > .container-target p {
+    color: var(--aux1);
+  }
+
+  .container-service > .container-target:hover > h3,
+  .container-service > .container-target:hover > p,
+  .container-service > .container-target:hover > a {
+    transition: all 0.5s ease-in-out;
+    height: inherit;
+    padding: inherit;
+    overflow: hidden;
+  }
+
+  .container-service > .container-target > p,
+  .container-service > .container-target > a {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .container-service > .container-target:hover > h3,
+  .container-service > .container-target:hover > p {
+    color: var(--clr);
+  }
+
+  .container-service > .container-target:hover > a {
+    background-color: var(--aux1);
+    color: var(--clr);
+  }
+
+  .container-service > .container-target > a:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #section-Service .container-tittle-service h3 {
+    max-width: 80%;
+  }
+}
