@@ -5,8 +5,8 @@ export default function Footer() {
     <footer className="animationEntry showAnimation">
       <section className="containerFooter">
         <section className="topFooter">
-          <figure className="figureComponent logo styleComponent">
-            <img className="styleImg" src="/pg_logo.png" alt="" />
+          <figure className=" logo contentIconStile">
+            <img className="styleImg" src="/pg_logo.webp" alt="" />
           </figure>
           <article className="styleComponent">
             <h4>
@@ -16,7 +16,7 @@ export default function Footer() {
           </article>
           <article className="styleComponent artSocial">
             <div className="containerSocial">
-              <figure className="figureComponent">
+              <figure className="contentIconStile">
                 <a href="#" target="_blank" aria-label="Redireccion a Facebook">
                   <img
                     src="/ic-face.svg"
@@ -28,7 +28,7 @@ export default function Footer() {
               <span>Facebook</span>
             </div>
             <div className="containerSocial">
-              <figure className="figureComponent">
+              <figure className="contentIconStile">
                 <a
                   href="#"
                   target="_blank"
@@ -43,7 +43,7 @@ export default function Footer() {
               <span>Instagram</span>
             </div>
             <div className="containerSocial">
-              <figure className="figureComponent">
+              <figure className="contentIconStile">
                 <a href="#" target="_blank" aria-label="Redireccion a Whatsapp">
                   <img
                     src="/ic-whats.svg"

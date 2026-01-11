@@ -40,7 +40,7 @@
 
   /**BACKGROUND*/
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/bg-serv1.png");
+    url("/bg-serv1.webp");
   background-position: center center;
   background-size: cover;
 }
@@ -60,7 +60,7 @@
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url("/bg-serv3.jpg");
+    url("/bg-serv3.webp");
 }
 
 .container-service > .container-target:nth-child(4) {

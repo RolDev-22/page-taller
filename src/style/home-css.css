@@ -45,15 +45,6 @@
   margin-bottom: 0.5rem;
 }
 
-.container-social figure {
-  display: block;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out 0.1s;
-}
-
 .container-social figure a {
   width: 100%;
   height: 100%;
@@ -70,11 +61,6 @@
   .container-home > .container-information {
     gap: 3rem;
   }
-
-  .container-social figure {
-    width: 5rem;
-    height: 5rem;
-  }
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
@@ -88,16 +74,6 @@
     border: 1px solid var(--clr);
     padding: 0.5rem;
     border-radius: 2rem;
-  }
-
-  .container-social figure {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .container-social figure:hover {
-    transform: scale(1.1);
-    background-color: var(--bg);
   }
 
   .container-social figure:nth-child(1):hover {

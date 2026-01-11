@@ -46,19 +46,16 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
+  column-gap: 0.5rem;
 }
 
-.containerFooter .topFooter .figureComponent {
-  display: flex;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-
-  overflow: hidden;
+.containerFooter > .topFooter > article > .containerSocial figure {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
-.containerFooter .topFooter .figureComponent img {
-  border-radius: 50%;
+.containerFooter > .topFooter .containerSocial a {
+  padding: 0;
 }
 
 .containerFooter .topFooter .logo {

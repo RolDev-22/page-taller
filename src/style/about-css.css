@@ -45,11 +45,6 @@
   color: var(--bg);
 }
 
-.container-about .description-about > article > img {
-  width: 30%;
-  object-fit: cover;
-}
-
 @media screen and (min-width: 768px) {
   .container-about .presentation-about {
     flex-direction: row;
@@ -71,10 +66,6 @@
 
   .container-about .description-about {
     flex-direction: column;
-  }
-
-  .container-about .description-about > article > img {
-    width: 25%;
   }
 }
 

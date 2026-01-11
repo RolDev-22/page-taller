@@ -18,7 +18,13 @@ const About = () => {
         </section>
         <section className="description-about mainStyle">
           <article className="animationEntry leftAnimation">
-            <img src="/ic-expe.svg" alt="logo-descriptivo" />
+            <figure className="contentIconStile">
+              <img
+                className="styleImg"
+                src="/ic-expe.svg"
+                alt="logo-descriptivo"
+              />
+            </figure>
             <h2 className="styleTitle">Experiencia</h2>
             <h4 className="styleTextMain styleParagraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex
@@ -28,7 +34,13 @@ const About = () => {
             </h4>
           </article>
           <article className="animationEntry showAnimation">
-            <img src="/ic-cality.svg" alt="logo-descriptivo" />
+            <figure className="contentIconStile">
+              <img
+                className="styleImg"
+                src="/ic-cality.svg"
+                alt="logo-descriptivo"
+              />
+            </figure>
             <h2 className="styleTitle">Calidad</h2>
             <h4 className="styleTextMain styleParagraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex
@@ -38,7 +50,13 @@ const About = () => {
             </h4>
           </article>
           <article className="animationEntry rigthAnimation">
-            <img src="/ic-profes.svg" alt="logo-descriptivo" />
+            <figure className="contentIconStile">
+              <img
+                className="styleImg"
+                src="/ic-profes.svg"
+                alt="logo-descriptivo"
+              />
+            </figure>
             <h2 className="styleTitle">Profesional</h2>
             <h4 className="styleTextMain styleParagraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex

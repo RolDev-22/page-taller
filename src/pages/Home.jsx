@@ -12,7 +12,7 @@ const Home = () => {
           </h3>
         </article>
         <article className="container-social">
-          <figure>
+          <figure className="contentIconStile">
             <a href="#" title="Siguenos en Instagram">
               <img
                 src="/ic-insta.svg"
@@ -21,7 +21,7 @@ const Home = () => {
               />
             </a>
           </figure>
-          <figure>
+          <figure className="contentIconStile">
             <a href="#" title="Siguenos en Facebook">
               <img
                 src="/ic-face.svg"
@@ -30,7 +30,7 @@ const Home = () => {
               />
             </a>
           </figure>
-          <figure>
+          <figure className="contentIconStile">
             <a href="#" title="Siguenos en Whatsapp">
               <img
                 src="/ic-whats.svg"

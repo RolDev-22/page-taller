@@ -30,7 +30,7 @@ export default function Header() {
     <header className={showNav ? "show" : ""}>
       <figure className="figure-logo">
         <a href="/">
-          <img loading="lazy" src="./pg_logo.png" alt="Logo Empresarial" />
+          <img loading="lazy" src="./pg_logo.webp" alt="Logo Empresarial" />
         </a>
       </figure>
       <nav ref={refToNav} className="nav-header">
