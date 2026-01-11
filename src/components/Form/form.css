@@ -19,7 +19,7 @@
 
 .form-contact .container-input > label {
   color: var(--aux2);
-  font-weight: 600;
+  font-weight: 200;
 }
 
 .container-input .inputClass {
@@ -31,7 +31,7 @@
   border-radius: 0.3rem;
   resize: none;
   padding-left: 0.5rem;
-  font-size: larger;
+  font-size: medium;
   border: 2px solid transparent;
 }
 

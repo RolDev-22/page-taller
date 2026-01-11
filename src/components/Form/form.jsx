@@ -6,7 +6,8 @@ export default function Form() {
       action={(e) => {
         e.preventDefault;
       }}
-      className="form-contact">
+      className="form-contact"
+      autoComplete="off">
       <div className="container-input">
         <label className="styleTextMain styleParagraph" htmlFor="input-name">
           Nombre Completo

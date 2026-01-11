@@ -1,0 +1,72 @@
+.containerFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--aux1);
+  background-color: var(--bg);
+}
+
+.containerFooter > .topFooter {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.containerFooter > .topFooter > .styleComponent {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.containerFooter > .topFooter > .artSocial {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.containerFooter > .topFooter > article > .containerSocial {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.containerFooter .topFooter .figureComponent {
+  display: flex;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+
+  overflow: hidden;
+}
+
+.containerFooter .topFooter .figureComponent img {
+  border-radius: 50%;
+}
+
+.containerFooter .topFooter .logo {
+  width: 7rem;
+  height: 7rem;
+}
+
+.containerFooter h3 {
+  padding: 0.5rem;
+  text-align: center;
+}

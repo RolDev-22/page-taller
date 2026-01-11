@@ -20,7 +20,7 @@ function App() {
 
         <Contact formContact={<Form />} mapContact={<Map />} />
       </main>
-      {/*<Footer />*/}
+      <Footer />
     </>
   );
 }

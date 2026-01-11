@@ -1,5 +1,5 @@
 import "./map.css";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import ButtonMap from "../ButtonMap/buttonMap";
 
 export default function Map() {
@@ -12,11 +12,7 @@ export default function Map() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
 
-        <Marker position={position}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
+        <Marker position={position}></Marker>
         <ButtonMap />
       </MapContainer>
     </>

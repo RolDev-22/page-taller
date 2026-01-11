@@ -131,6 +131,30 @@ section .container {
   cursor: pointer;
 }
 
+.btnCenterMap {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--bg);
+  box-sizing: content-box;
+  z-index: 400;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnCenterMap:hover {
+  transform: scale(1.1);
+  background-color: var(--aux1);
+}
+
 .animationEntry {
   --opStart: 0;
   --opEnd: 1;
@@ -157,30 +181,6 @@ section .container {
 .showAnimation {
   --trfmStart: translateY(100%);
   --trfmEnd: translateY(0);
-}
-
-.btnCenterMap {
-  position: absolute;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 0.5rem;
-  bottom: 2rem;
-  right: 2rem;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: var(--bg);
-  box-sizing: content-box;
-  z-index: 400;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.btnCenterMap:hover {
-  transform: scale(1.1);
-  background-color: var(--aux1);
 }
 
 @keyframes entryAnimation {
