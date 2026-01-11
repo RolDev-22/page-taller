@@ -76,7 +76,14 @@ section .container {
   padding: 0.1rem;
 }
 
-.styleTitleH2 {
+.styleTextMain {
+  color: var(--clr);
+  user-select: none;
+  text-align: justify;
+  font-family: var(--fontStyle_1);
+}
+
+.styleTitle {
   color: var(--clr);
   font-family: var(--fontStyle_5);
   font-weight: 500;
@@ -84,7 +91,7 @@ section .container {
   user-select: none;
 }
 
-.styleTitleH3 {
+.styleSubTitle {
   color: var(--aux1);
   font-family: var(--fontStyle_2);
   font-weight: bolder;
@@ -92,12 +99,36 @@ section .container {
   user-select: none;
 }
 
-.styleMain-p {
-  color: var(--clr);
+.styleParagraph {
+  font-size: 1.5rem;
+}
+
+.styleDescription {
   font-size: 1.3rem;
-  font-family: var(--fontStyle_1);
-  text-align: justify;
-  user-select: none;
+}
+
+.styleSubDescription {
+  font-size: 1.1rem;
+}
+
+.styleImg {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.styleBtn {
+  min-width: 50%;
+  max-width: 50%;
+  background: var(--aux1);
+  color: var(--clr);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .animationEntry {
@@ -128,6 +159,30 @@ section .container {
   --trfmEnd: translateY(0);
 }
 
+.btnCenterMap {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--bg);
+  box-sizing: content-box;
+  z-index: 400;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnCenterMap:hover {
+  transform: scale(1.1);
+  background-color: var(--aux1);
+}
+
 @keyframes entryAnimation {
   from {
     opacity: var(--opStart);
@@ -139,8 +194,34 @@ section .container {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .styleTitle {
+    font-size: 3.5rem;
+  }
+
+  .styleSubTitle {
+    font-size: 2.5rem;
+  }
+
+  .styleParagraph {
+    font-size: 2rem;
+  }
+
+  .styleDescription {
+    font-size: 1.7rem;
+  }
+
+  .styleSubDescription {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .animationEntry {
     animation-range: entry 0% cover 25%;
+  }
+
+  .styleBtn:hover {
+    transform: scale(1.1);
   }
 }

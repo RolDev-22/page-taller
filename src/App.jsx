@@ -1,9 +1,11 @@
 import { About } from "./pages/About";
 import { Home } from "./pages/Home";
 import { Service } from "./pages/Service";
-import { Contact } from "./pages/Conatct";
+import { Contact } from "./pages/Contact";
 import Footer from "./components/Footer/footer";
 import Header from "./components/Header/header";
+import Form from "./components/Form/form";
+import Map from "./components/Map/map";
 
 function App() {
   return (
@@ -16,7 +18,7 @@ function App() {
 
         <About />
 
-        <Contact />
+        <Contact formContact={<Form />} mapContact={<Map />} />
       </main>
       {/*<Footer />*/}
     </>

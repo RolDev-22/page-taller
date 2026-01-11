@@ -1,0 +1,35 @@
+.mapStyle {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.leaflet-control-zoom {
+  display: none;
+  padding: 0.1 rem;
+  border-radius: 0.5rem;
+}
+
+.leaflet-control-zoom a {
+  font-size: 5rem;
+  color: var(--clr);
+  background-color: var(--bg);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: var(--aux1);
+}
+
+.leaflet-control-zoom span {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .leaflet-control-zoom {
+    display: block;
+  }
+}

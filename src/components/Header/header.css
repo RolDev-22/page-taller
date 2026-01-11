@@ -59,8 +59,9 @@ header > .nav-header > ul > li > a {
   opacity: 0;
   width: 0;
   transition: all 0.2s ease-in-out;
-  font-weight: 500;
+  font-weight: bolder;
   text-shadow: 1px 1px 5px var(--clr);
+  color: var(--bg);
 }
 
 header > .container-menu {
@@ -179,7 +180,7 @@ header > .container-menu > .btn-menu::after {
     opacity: 1;
     flex: 1;
     font-size: 1.5rem;
-
+    color: var(--aux1);
     transition: all 0.3s ease-in-out;
   }
 

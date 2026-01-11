@@ -6,11 +6,10 @@ const About = () => {
       <section className="container container-about">
         <section className="presentation-about mainStyle">
           <article className="animationEntry leftAnimation">
-            <h2 className="styleTitleH2">Sobre Nosotros</h2>
-            <h3 className="styleTitleH3">
+            <h2 className="styleTitle">Sobre Nosotros</h2>
+            <h3 className="styleSubTitle">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-              corporis delectus, illum saepe quod quo est ducimus? Tenetur nisi,
-              distinctio quam impedit voluptas eligendi
+              corporis delectus, illum saepe quod quo
             </h3>
           </article>
           <figure className="animationEntry rigthAnimation">
@@ -18,30 +17,30 @@ const About = () => {
           </figure>
         </section>
         <section className="description-about mainStyle">
-          <article className="description animationEntry leftAnimation">
+          <article className="animationEntry leftAnimation">
             <img src="/ic-expe.svg" alt="logo-descriptivo" />
-            <h2 className="styleTitleH2">Experiencia</h2>
-            <h4>
+            <h2 className="styleTitle">Experiencia</h2>
+            <h4 className="styleTextMain styleParagraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex
               officia accusamus sed nemo autem dolorem magni? Vero, officia?
               Nulla, amet corrupti. Voluptas soluta nulla eum nihil tempore amet
               quas!
             </h4>
           </article>
-          <article className="description animationEntry showAnimation">
+          <article className="animationEntry showAnimation">
             <img src="/ic-cality.svg" alt="logo-descriptivo" />
-            <h2 className="styleTitleH2">Calidad</h2>
-            <h4>
+            <h2 className="styleTitle">Calidad</h2>
+            <h4 className="styleTextMain styleParagraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex
               officia accusamus sed nemo autem dolorem magni? Vero, officia?
               Nulla, amet corrupti. Voluptas soluta nulla eum nihil tempore amet
               quas!
             </h4>
           </article>
-          <article className="description animationEntry rigthAnimation">
+          <article className="animationEntry rigthAnimation">
             <img src="/ic-profes.svg" alt="logo-descriptivo" />
-            <h2 className="styleTitleH2">Profesionalismo</h2>
-            <h4>
+            <h2 className="styleTitle">Profesional</h2>
+            <h4 className="styleTextMain styleParagraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex
               officia accusamus sed nemo autem dolorem magni? Vero, officia?
               Nulla, amet corrupti. Voluptas soluta nulla eum nihil tempore amet
